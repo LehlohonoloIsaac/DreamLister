@@ -19,6 +19,7 @@
 		ED1954D82007819200902B7A /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D22007819200902B7A /* Item+CoreDataClass.swift */; };
 		ED1954D92007819200902B7A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */; };
 		ED1954DE20078BE200902B7A /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954DD20078BE200902B7A /* MaterialView.swift */; };
+		ED1954E020078F2900902B7A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954DF20078F2900902B7A /* ItemCell.swift */; };
 		ED94800E1FD937C000FB729A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800D1FD937C000FB729A /* AppDelegate.swift */; };
 		ED9480101FD937C000FB729A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800F1FD937C000FB729A /* MainVC.swift */; };
 		ED9480131FD937C000FB729A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9480111FD937C000FB729A /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		ED1954D22007819200902B7A /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ED1954DD20078BE200902B7A /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		ED1954DF20078F2900902B7A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		ED94800A1FD937C000FB729A /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED94800D1FD937C000FB729A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED94800F1FD937C000FB729A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1954DD20078BE200902B7A /* MaterialView.swift */,
+				ED1954DF20078F2900902B7A /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1954E020078F2900902B7A /* ItemCell.swift in Sources */,
 				ED1954D82007819200902B7A /* Item+CoreDataClass.swift in Sources */,
 				ED1954D42007819200902B7A /* ItemType+CoreDataClass.swift in Sources */,
 				ED9480101FD937C000FB729A /* MainVC.swift in Sources */,
