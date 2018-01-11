@@ -18,8 +18,9 @@
 		ED1954D72007819200902B7A /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D12007819200902B7A /* Store+CoreDataProperties.swift */; };
 		ED1954D82007819200902B7A /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D22007819200902B7A /* Item+CoreDataClass.swift */; };
 		ED1954D92007819200902B7A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */; };
+		ED1954DE20078BE200902B7A /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954DD20078BE200902B7A /* MaterialView.swift */; };
 		ED94800E1FD937C000FB729A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800D1FD937C000FB729A /* AppDelegate.swift */; };
-		ED9480101FD937C000FB729A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800F1FD937C000FB729A /* ViewController.swift */; };
+		ED9480101FD937C000FB729A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800F1FD937C000FB729A /* MainVC.swift */; };
 		ED9480131FD937C000FB729A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9480111FD937C000FB729A /* Main.storyboard */; };
 		ED9480161FD937C000FB729A /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9480141FD937C000FB729A /* DreamLister.xcdatamodeld */; };
 		ED9480181FD937C000FB729A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9480171FD937C000FB729A /* Assets.xcassets */; };
@@ -62,9 +63,10 @@
 		ED1954D12007819200902B7A /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ED1954D22007819200902B7A /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED1954DD20078BE200902B7A /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		ED94800A1FD937C000FB729A /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED94800D1FD937C000FB729A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED94800F1FD937C000FB729A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED94800F1FD937C000FB729A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		ED9480121FD937C000FB729A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED9480151FD937C000FB729A /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		ED9480171FD937C000FB729A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		ED1954DC20078BCB00902B7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED1954DD20078BE200902B7A /* MaterialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ED9480011FD937C000FB729A = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +178,10 @@
 		ED94800C1FD937C000FB729A /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				ED1954DC20078BCB00902B7A /* View */,
 				ED1954DB2007826000902B7A /* Model */,
 				ED94800D1FD937C000FB729A /* AppDelegate.swift */,
-				ED94800F1FD937C000FB729A /* ViewController.swift */,
+				ED94800F1FD937C000FB729A /* MainVC.swift */,
 				ED9480111FD937C000FB729A /* Main.storyboard */,
 				ED9480171FD937C000FB729A /* Assets.xcassets */,
 				ED9480191FD937C000FB729A /* LaunchScreen.storyboard */,
@@ -515,7 +526,8 @@
 			files = (
 				ED1954D82007819200902B7A /* Item+CoreDataClass.swift in Sources */,
 				ED1954D42007819200902B7A /* ItemType+CoreDataClass.swift in Sources */,
-				ED9480101FD937C000FB729A /* ViewController.swift in Sources */,
+				ED9480101FD937C000FB729A /* MainVC.swift in Sources */,
+				ED1954DE20078BE200902B7A /* MaterialView.swift in Sources */,
 				ED1954C92007808900902B7A /* Image+CoreDataProperties.swift in Sources */,
 				ED94800E1FD937C000FB729A /* AppDelegate.swift in Sources */,
 				ED1954D72007819200902B7A /* Store+CoreDataProperties.swift in Sources */,
