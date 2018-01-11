@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+let appD = UIApplication.shared.delegate as? AppDelegate
+let context = appD?.persistentContainer.viewContext
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
