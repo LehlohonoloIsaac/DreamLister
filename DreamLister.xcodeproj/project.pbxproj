@@ -20,6 +20,8 @@
 		ED1954D92007819200902B7A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */; };
 		ED1954DE20078BE200902B7A /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954DD20078BE200902B7A /* MaterialView.swift */; };
 		ED1954E020078F2900902B7A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1954DF20078F2900902B7A /* ItemCell.swift */; };
+		ED6682E42008A59900E4029D /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6682E32008A59900E4029D /* ItemDetailsVC.swift */; };
+		ED6682E62008A8ED00E4029D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6682E52008A8EC00E4029D /* CustomTextField.swift */; };
 		ED94800E1FD937C000FB729A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800D1FD937C000FB729A /* AppDelegate.swift */; };
 		ED9480101FD937C000FB729A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94800F1FD937C000FB729A /* MainVC.swift */; };
 		ED9480131FD937C000FB729A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9480111FD937C000FB729A /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		ED1954D32007819200902B7A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ED1954DD20078BE200902B7A /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		ED1954DF20078F2900902B7A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		ED6682E32008A59900E4029D /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		ED6682E52008A8EC00E4029D /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ED94800A1FD937C000FB729A /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED94800D1FD937C000FB729A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED94800F1FD937C000FB729A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -152,8 +156,18 @@
 			children = (
 				ED1954DD20078BE200902B7A /* MaterialView.swift */,
 				ED1954DF20078F2900902B7A /* ItemCell.swift */,
+				ED6682E52008A8EC00E4029D /* CustomTextField.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ED6682E22008A57F00E4029D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED94800F1FD937C000FB729A /* MainVC.swift */,
+				ED6682E32008A59900E4029D /* ItemDetailsVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		ED9480011FD937C000FB729A = {
@@ -184,7 +198,7 @@
 				ED1954DC20078BCB00902B7A /* View */,
 				ED1954DB2007826000902B7A /* Model */,
 				ED94800D1FD937C000FB729A /* AppDelegate.swift */,
-				ED94800F1FD937C000FB729A /* MainVC.swift */,
+				ED6682E22008A57F00E4029D /* Controller */,
 				ED9480111FD937C000FB729A /* Main.storyboard */,
 				ED9480171FD937C000FB729A /* Assets.xcassets */,
 				ED9480191FD937C000FB729A /* LaunchScreen.storyboard */,
@@ -535,11 +549,13 @@
 				ED1954C92007808900902B7A /* Image+CoreDataProperties.swift in Sources */,
 				ED94800E1FD937C000FB729A /* AppDelegate.swift in Sources */,
 				ED1954D72007819200902B7A /* Store+CoreDataProperties.swift in Sources */,
+				ED6682E42008A59900E4029D /* ItemDetailsVC.swift in Sources */,
 				ED9480161FD937C000FB729A /* DreamLister.xcdatamodeld in Sources */,
 				ED1954D62007819200902B7A /* Store+CoreDataClass.swift in Sources */,
 				ED1954D52007819200902B7A /* ItemType+CoreDataProperties.swift in Sources */,
 				ED1954D92007819200902B7A /* Item+CoreDataProperties.swift in Sources */,
 				ED1954C82007808900902B7A /* Image+CoreDataClass.swift in Sources */,
+				ED6682E62008A8ED00E4029D /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
