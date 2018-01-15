@@ -15,8 +15,10 @@ class ItemDetailsVC: UIViewController {
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var priceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
+    @IBOutlet weak var thumbImage: UIImageView!
     var stores: [Store] = []
     var itemToEdit: Item?
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class ItemDetailsVC: UIViewController {
         }
         storePicker.dataSource = self
         storePicker.delegate = self
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
 //        let store = Store(context: context!)
 //        store.name = "Best Buy"
@@ -58,12 +62,15 @@ class ItemDetailsVC: UIViewController {
     @IBAction func savePressed(_ sender: UIButton) {
         
         var item: Item!
-        
+        var picture: Image!
         if itemToEdit == nil {
             item = Item(context: context!)
         } else {
             item = itemToEdit
         }
+        picture = Image(context: context!)
+        picture.image = thumbImage.image
+        item.toImage = picture
         
         if let title = titleField.text {
             item.title = title
@@ -85,6 +92,7 @@ class ItemDetailsVC: UIViewController {
             titleField.text = item.title
             priceField.text = String(item.price)
             detailsField.text = item.details
+            thumbImage.image = item.toImage?.image as? UIImage
             if let store = item.toStore {
                  var index = 0
                 repeat {
@@ -100,13 +108,16 @@ class ItemDetailsVC: UIViewController {
         }
     }
     
-    
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if itemToEdit != nil {
             context?.delete(itemToEdit!)
             appD?.saveContext()
         }
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func addImage(_ sender: UIButton) {
+        present(imagePicker, animated: true, completion: nil)
     }
     
 }
@@ -128,4 +139,17 @@ extension ItemDetailsVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //
     }
+}
+
+extension ItemDetailsVC: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        if let img = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            thumbImage.image = img
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension ItemDetailsVC: UINavigationControllerDelegate {
+    
 }
