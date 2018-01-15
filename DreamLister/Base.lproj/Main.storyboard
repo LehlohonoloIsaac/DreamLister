@@ -230,6 +230,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="NO"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="savePressed:" destination="a7l-Ql-kNI" eventType="touchUpInside" id="adi-cs-LoY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

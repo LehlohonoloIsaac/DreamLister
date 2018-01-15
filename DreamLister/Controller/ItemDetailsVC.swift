@@ -25,17 +25,17 @@ class ItemDetailsVC: UIViewController {
         storePicker.dataSource = self
         storePicker.delegate = self
         
-        let store = Store(context: context!)
-        store.name = "Best Buy"
-        let store2 = Store(context: context!)
-        store2.name = "Tesla dealership"
-        let store3 = Store(context: context!)
-        store3.name = "Hlox electronics"
-        let store4 = Store(context: context!)
-        store4.name = "Amazon"
-        let store5 = Store(context: context!)
-        store5.name = "K Mart"
-        appD?.saveContext()
+//        let store = Store(context: context!)
+//        store.name = "Best Buy"
+//        let store2 = Store(context: context!)
+//        store2.name = "Tesla dealership"
+//        let store3 = Store(context: context!)
+//        store3.name = "Hlox electronics"
+//        let store4 = Store(context: context!)
+//        store4.name = "Amazon"
+//        let store5 = Store(context: context!)
+//        store5.name = "K Mart"
+//        appD?.saveContext()
         
         getStores()
     }
@@ -49,6 +49,25 @@ class ItemDetailsVC: UIViewController {
         } catch {
             
         }
+    }
+    
+    @IBAction func savePressed(_ sender: UIButton) {
+    
+        let item = Item(context: context!)
+        
+        if let title = titleField.text {
+            item.title = title
+        }
+        if let price = priceField.text {
+            item.price = (price as NSString).doubleValue
+        }
+        if let details = detailsField.text {
+            item.details = details
+        }
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        appD?.saveContext()
+        
+        navigationController?.popViewController(animated: true)
     }
     
 }

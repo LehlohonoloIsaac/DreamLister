@@ -18,7 +18,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        generateTestData()
+        //generateTestData()
         attemptFetch()
     }
     
@@ -28,6 +28,7 @@ class MainVC: UIViewController {
         fetchRequest.sortDescriptors = [dateSort]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context!, sectionNameKeyPath: nil, cacheName: nil)
+        controller.delegate = self
         self.controller = controller
         do {
             try controller.performFetch()
