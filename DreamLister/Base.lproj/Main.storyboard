@@ -268,6 +268,12 @@
                             <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="rw6-yb-xhR" id="J3t-Fe-ttU"/>
+                        <outlet property="priceField" destination="EGg-sl-spt" id="tng-8x-wCc"/>
+                        <outlet property="storePicker" destination="ubX-6d-n4o" id="qLG-Sw-lEy"/>
+                        <outlet property="titleField" destination="dzo-JC-rLN" id="iyr-eW-0mY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHt-ow-7Gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
