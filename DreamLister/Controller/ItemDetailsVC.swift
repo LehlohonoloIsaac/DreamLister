@@ -100,6 +100,15 @@ class ItemDetailsVC: UIViewController {
         }
     }
     
+    
+    @IBAction func deletePressed(_ sender: UIBarButtonItem) {
+        if itemToEdit != nil {
+            context?.delete(itemToEdit!)
+            appD?.saveContext()
+        }
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension ItemDetailsVC: UIPickerViewDelegate, UIPickerViewDataSource {
